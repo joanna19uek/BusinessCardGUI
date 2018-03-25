@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <script src="cordova.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body onload="init()">
+        <div data-role="page" id="mainpage">
+            <div data-role="header">
+                <h1>Business card</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <h3>Joanna Pełeńska</h3>
+                <p>asia_p99@tlen.pl</p>
+                <p>Applied Informatics</p>
+                <a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests</a>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>(c) Joanna Pełeńska</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="interests">
+            <div data-role="header" data-theme="a">
+                <a href="#mainpage" class="ui-icon-back"></a>
+                <h1>My interests</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <ul>
+                    <li>Sport</li>
+                    <li>Music</li>
+                    <li>Programming</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
